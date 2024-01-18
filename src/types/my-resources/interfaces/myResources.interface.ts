@@ -1,20 +1,4 @@
-import {
-  Attachment,
-  Category,
-  CommonEntityFields,
-  RequestParams,
-  ResourcesTabsEnum as ResourcesTypes
-} from '~/types'
-
-export interface Lesson extends CommonEntityFields {
-  title: string
-  author: string
-  content: string
-  description: string
-  attachments: Attachment[]
-  category: Category | null
-  resourceType?: ResourcesTypes
-}
+import { CommonEntityFields, RequestParams } from '~/types'
 
 export interface Categories extends CommonEntityFields {
   name: string
