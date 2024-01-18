@@ -18,7 +18,7 @@ import {
   TableRowAction,
   ResourcesTabsEnum
 } from '~/types'
-import { roundedBorderTable } from '~/containers/my-cooperations/cooperations-container/CooperationContainer.styles'
+// import { roundedBorderTable } from '~/containers/my-cooperations/cooperations-container/CooperationContainer.styles'
 
 interface MyResourcesTableInterface<T>
   extends Omit<EnhancedTableProps<T, undefined>, 'data'> {
@@ -111,7 +111,7 @@ const MyResourcesTable = <T extends TableItem>({
         data={{ items: response.items }}
         emptyTableKey={`myResourcesPage.${resource}.emptyItems`}
         rowActions={rowActions}
-        sx={roundedBorderTable}
+        // sx={roundedBorderTable}
         {...props}
       />
       <AppPagination
