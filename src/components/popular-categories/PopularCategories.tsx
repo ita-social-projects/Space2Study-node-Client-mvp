@@ -64,7 +64,7 @@ const PopularCategories: FC<PopularCategoriesProps> = ({
           )}`}
           img={serviceIcon}
           key={item._id}
-          link={`${authRoutes.subjects.path}?categoryId=${item._id}`}
+          link={`${authRoutes.accountMenu.myProfile.path}?categoryId=${item._id}`}
           title={item.name}
         />
       )),

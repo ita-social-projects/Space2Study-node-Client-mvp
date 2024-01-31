@@ -14,11 +14,8 @@ import { errorRoutes } from '~/router/constants/errorRoutes'
 import { tutorRouter } from '~/router/routes/tutorRouter'
 import { errorRouter } from '~/router/routes/errorRouter'
 import { studentRouter } from '~/router/routes/studentRouter'
-import { adminRouter } from '~/router/routes/adminRouter'
 import { guestRouter } from '~/router/routes/guestRouter'
 import { authRouter } from '~/router/routes/authRouter'
-import PrivateRoute from '~/router/helpers/PrivateRoute'
-import { UserRoleEnum } from '~/types'
 import { home } from '~/router/constants/crumbs'
 
 const HomeRoute = lazy(() => import('~/router/helpers/HomeRoute'))
@@ -38,12 +35,6 @@ export const routerConfig = (
       {studentRouter}
       <Route path={guestRoutes.error.route}>{errorRouter}</Route>
       <Route element={<Logout />} path={authRoutes.accountMenu.logout.route} />
-    </Route>
-    <Route
-      element={<PrivateRoute role={[UserRoleEnum.Admin]} />}
-      path={guestRoutes.admin.route}
-    >
-      {adminRouter}
     </Route>
   </Route>
 )
