@@ -7,7 +7,7 @@
 SpaceToStudy project is a platform where experts in various fields share their knowledge and students can learn from the best. Here you can find the proper training course, find a tutor, or find students and receive feedback from them.
 
 
-[![GitHub issues](https://img.shields.io/github/issues/ita-social-projects/Space2Study-node-Client-mvp)](https://github.com/ita-social-projects/Space2Study-node-Client-mvp/issues)
+[![GitHub issues](https://img.shields.io/github/issues/OlyaKorchan/ita-social-projects/Space2Study-node-Client-mvp)](https://github.com/ita-social-projects/Space2Study-node-Client-mvp/issues?q=is%3Aissue+is%3Aopen)
 [![Pending Pull-Requests](https://img.shields.io/github/issues-pr/ita-social-projects/Space2Study-node-Client-mvp?style=flat-square)](https://github.com/ita-social-projects/Space2Study-node-Client-mvp/pulls)
 [![GitHub license](https://img.shields.io/github/license/ita-social-projects/Space2Study-node-Client-mvp)](https://github.com/ita-social-projects/Space2Study-node-Client-mvp/blob/LICENSE)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/horondi/horondi_client_fe)](https://s2s-front-stage.azurewebsites.net/)
@@ -254,56 +254,13 @@ Only the release should merge into the main branch!!!
 
 ### Development team
 
-[![@DeLettenhove](https://avatars.githubusercontent.com/u/49168997?v=4)](https://github.com/DeLettenhove)
-[![@boris-giga](https://avatars.githubusercontent.com/u/61072426?v=4)](https://github.com/boris-giga)
-[![@bohdanst1914](https://avatars.githubusercontent.com/u/27858056?v=4)](https://github.com/bohdanst1914)
-[![@domnelkin](https://avatars.githubusercontent.com/u/78971099?v=4)](https://github.com/domnelkin)
-[![@RestingState](https://avatars.githubusercontent.com/u/84774115?v=4)](https://github.com/RestingState)
-[![@greentoss](https://avatars.githubusercontent.com/u/41526202?v=4)](https://github.com/greentoss)
-[![@High-Voltaged](https://avatars.githubusercontent.com/u/71522782?v=4)](https://github.com/High-Voltaged)
-[![@Mr-Bogdan](https://avatars.githubusercontent.com/u/62215279?v=4)](https://github.com/Mr-Bogdan)
-[![@dmytruk-y](https://avatars.githubusercontent.com/u/86732805?v=4)](https://github.com/dmytruk-y)
-[![@Haytham1337](https://avatars.githubusercontent.com/u/36926670?v=4)](https://github.com/Haytham1337)
-[![@byavdoshniak](https://avatars.githubusercontent.com/u/87911115?s=200&u=4540d5aba6e388992ca06b9224ed0e0a35f94b1c&v=4)](https://github.com/byavdoshniak)
-[![@rostyslaw27](https://avatars.githubusercontent.com/u/57355852?s=200&u=4540d5aba6e388992ca06b9224ed0e0a35f94b1c&v=4)](https://github.com/rostyslaw27)
-[![@tarasSanotskyi](https://avatars.githubusercontent.com/u/79531224?s=200&u=4540d5aba6e388992ca06b9224ed0e0a35f94b1c&v=4)](https://github.com/tarasSanotskyi)
-[![@LubomyrKashuba](https://avatars.githubusercontent.com/u/80056472?s=200&u=4540d5aba6e388992ca06b9224ed0e0a35f94b1c&v=4)](https://github.com/LubomyrKashuba)
-[![@wonderflu](https://avatars.githubusercontent.com/u/86119240?v=4)](https://github.com/wonderflu)
-[![@romanortynskyi](https://avatars.githubusercontent.com/u/50491616?s=200&u=4540d5aba6e388992ca06b9224ed0e0a35f94b1c&v=4)](https://github.com/romanortynskyi)
-[![@](https://avatars.githubusercontent.com/u/45914032?v=4)](https://github.com/Pipuss)
 [![@Tolik170](https://avatars.githubusercontent.com/u/63456632?v=4)](https://github.com/Tolik170)
-[![@Yevhendzyuba](https://avatars.githubusercontent.com/u/56231198?v=4)](https://github.com/Yevhendzyuba)
-[![@MickhaelSh](https://avatars.githubusercontent.com/u/97129041?v=4)](https://github.com/MickhaelSh)
-[![@IrynaMel](https://avatars.githubusercontent.com/u/86352174?v=4)](https://github.com/IrynaMel)
-[![@Yurenko](https://avatars.githubusercontent.com/u/83120263?v=4)](https://github.com/Yurenko)
-[![@KhrystynaPavlikovska](https://avatars.githubusercontent.com/u/34419998?s=400&u=15346304d164fb346cc2671a7d33052d2a6324e2&v=4)](https://github.com/KhrystynaPavlikovska)
-[![@Roman-Peretiatko](https://avatars.githubusercontent.com/u/79856961?v=4)](https://github.com/Roman-Peretiatko)
-[![@mxrcury](https://user-images.githubusercontent.com/34419998/222748150-75fae7f1-e219-48f6-a225-8f91f9cbbbd3.png)](https://github.com/mxrcury)
-[![@tsivkadi](https://user-images.githubusercontent.com/34419998/222748492-37a29d91-8acc-4319-8402-52ec5fbaa57a.png)](https://github.com/tsivkadi)
-[![@Radomyr-kh](https://user-images.githubusercontent.com/34419998/222748801-1112f260-9c96-4234-9e5e-550cddeb80d5.png)](https://github.com/Radomyr-kh)
-[![@ArturBekhDEV](https://avatars.githubusercontent.com/u/102412173?v=4)](https://github.com/ArturBekhDEV)
-[![@FryDay969](https://avatars.githubusercontent.com/u/39992977?v=4)](https://github.com/FryDay969)
-[![@TSlashDreamy](https://avatars.githubusercontent.com/u/45912519?v=4)](https://github.com/TSlashDreamy)
 [![@Mav-Ivan](https://avatars.githubusercontent.com/u/110425368?v=4)](https://github.com/Mav-Ivan)
-[![@mynotdoing](https://avatars.githubusercontent.com/u/75339353?v=4)](https://github.com/mynotdoing)
 [![@dmtrth25](https://avatars.githubusercontent.com/u/56305508?v=4)](https://github.com/dmtrth25)
 [![@abalanovsky](https://avatars.githubusercontent.com/u/108689551?v=4)](https://github.com/abalanovsky)
 [![@OlyaKorchan](https://avatars.githubusercontent.com/u/17857767?v=4)](https://github.com/OlyaKorchan)
-[![@MariaAfonina](https://avatars.githubusercontent.com/u/104988390?v=4)](https://github.com/MariaAfonina)
-[![@]()]()
+[![@Marichka0406](https://avatars.githubusercontent.com/u/121502737?v=4)](https://github.com/Marichka0406)
 
-### DevOps team
-
-[![@redbearddog](https://avatars.githubusercontent.com/u/54843443?v=4)](https://github.com/redbearddog)
-[![@abohatyrov](https://avatars.githubusercontent.com/u/52012169?v=4)](https://github.com/abohatyrov)
-[![@panasyg](https://avatars.githubusercontent.com/u/91308486?v=4)](https://github.com/panasyg)
-
-### Designer team
-
-[![@philosofii](https://avatars.githubusercontent.com/u/111736765?v=4)](https://github.com/philosofii)
-[![@KhrystynaPavlikovska](https://avatars.githubusercontent.com/u/34419998?s=400&u=15346304d164fb346cc2671a7d33052d2a6324e2&v=4)](https://github.com/KhrystynaPavlikovska)
-[![@LazyMarichka](https://avatars.githubusercontent.com/u/135900325?v=4)](https://github.com/LazyMarichka)
-[![@Nastia197](https://avatars.githubusercontent.com/u/76164279?v=4)](https://github.com/Nastia197)
 ---
 
 ## FAQ
