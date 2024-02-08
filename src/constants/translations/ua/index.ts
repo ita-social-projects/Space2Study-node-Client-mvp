@@ -15,25 +15,17 @@ import completeProfile from './complete-profile.json'
 import findOffers from './find-offer-page.json'
 import filters from './filters.json'
 import iconsTooltip from './icons-tooltip.json'
-import subjectsPage from './subjects-page.json'
 import tutorHomePage from './tutor-home-page.json'
-import offerPage from './offer-page.json'
-import offerDetailsPage from './offer-details-page.json'
 import cooperationsPage from './cooperations-page.json'
-import myOffersPage from './my-offers-page.json'
 import myResourcesPage from './my-resources-page.json'
-import myCoursesPage from './my-courses-page.json'
-import chatPage from './chat.json'
 import lesson from './lesson.json'
 import questionPage from './question-page.json'
 import footer from './footer.json'
 import step from './step.json'
 import userTable from './user-table.json'
-import admin from './admin.json'
 import cookiePolicyPage from './cookie-policy-page.json'
 import guestHomePage from './guest-home-page.json'
 import table from './table.json'
-import course from './course.json'
 
 const ua = {
   translations: {
@@ -54,25 +46,17 @@ const ua = {
     findOffers,
     filters,
     iconsTooltip,
-    subjectsPage,
     tutorHomePage,
-    offerPage,
-    offerDetailsPage,
     cooperationsPage,
-    myOffersPage,
     myResourcesPage,
-    myCoursesPage,
-    chatPage,
     lesson,
     questionPage,
     footer,
     step,
     userTable,
-    admin,
     cookiePolicyPage,
     guestHomePage,
-    table,
-    course
+    table
   }
 }
 

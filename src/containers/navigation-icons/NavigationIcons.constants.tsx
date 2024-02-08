@@ -9,7 +9,6 @@ import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded'
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined'
 import { IconButtonProps } from '@mui/material/IconButton'
 
-import { authRoutes } from '~/router/constants/authRoutes'
 import { NotificationTypeEnums } from '~/types'
 import { styles } from '~/containers/navigation-icons/NavigationIcons.styles'
 
@@ -66,8 +65,7 @@ export const userIcons: NavigationIconButton[] = [
     icon: <MessageRoundedIcon />,
     buttonProps: () => ({
       component: Link,
-      sx: styles.studentIcons,
-      to: authRoutes.chat.path
+      sx: styles.studentIcons
     })
   },
   {

@@ -17,7 +17,6 @@ import step from './step.json'
 import modals from './email-modals.json'
 import errors from './errors.json'
 import table from './table.json'
-import admin from './admin.json'
 import breadCrumbs from './breadcrumbs.json'
 import completeProfile from './complete-profile.json'
 import tutorProfilePage from './tutor-profile-page.json'
@@ -26,17 +25,10 @@ import userTable from './user-table.json'
 import errorMessages from './error-messages.json'
 import findOffers from './find-offer-page.json'
 import filters from './filters.json'
-import subjectsPage from './subjects-page.json'
-import offerPage from './offer-page.json'
-import offerDetailsPage from './offer-details-page.json'
 import cooperationsPage from './cooperations-page.json'
-import myOffersPage from './my-offers-page.json'
 import myResourcesPage from './my-resources-page.json'
-import myCoursesPage from './my-courses-page.json'
-import chatPage from './chat.json'
 import lesson from './lesson.json'
 import questionPage from './question-page.json'
-import course from './course.json'
 
 const en = {
   translations: {
@@ -59,7 +51,6 @@ const en = {
     modals,
     errors,
     table,
-    admin,
     breadCrumbs,
     completeProfile,
     tutorProfilePage,
@@ -68,17 +59,10 @@ const en = {
     errorMessages,
     findOffers,
     filters,
-    subjectsPage,
-    offerPage,
-    offerDetailsPage,
     cooperationsPage,
-    myOffersPage,
     myResourcesPage,
-    myCoursesPage,
-    chatPage,
     lesson,
-    questionPage,
-    course
+    questionPage
   }
 }
 

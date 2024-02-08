@@ -45,7 +45,7 @@ const ProfileInfo = ({ userData }) => {
   const actionIconBtn = (
     <IconButton
       data-testid='icon-btn'
-      href={isMyProfile && authRoutes.editProfile.path}
+      href={isMyProfile}
       onClick={!isMyProfile ? copyProfileLink : undefined}
       size={isLaptopAndAbove ? SizeEnum.Large : SizeEnum.Small}
       sx={styles.iconBtn}

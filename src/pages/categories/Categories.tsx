@@ -78,7 +78,7 @@ const Categories = () => {
             )}`}
             img={serviceIcon}
             key={item._id}
-            link={`${authRoutes.subjects.path}?categoryId=${item._id}`}
+            link={`${authRoutes.categories.path}?categoryId=${item._id}`}
             title={item.name}
           />
         )
@@ -109,7 +109,7 @@ const Categories = () => {
 
       <DirectionLink
         after={<ArrowForwardIcon fontSize={SizeEnum.Small} />}
-        linkTo={authRoutes.findOffers.path}
+        linkTo={authRoutes.categories.path}
         title={t('categoriesPage.showAllOffers')}
       />
 
