@@ -7,7 +7,6 @@ import Typography from '@mui/material/Typography'
 import { ResourceService } from '~/services/resource-service'
 import { useModalContext } from '~/context/modal-context'
 import AppButton from '~/components/app-button/AppButton'
-import AddDocuments from '~/containers/add-documents/AddDocuments'
 import EnhancedTable, {
   EnhancedTableProps
 } from '~/components/enhanced-table/EnhancedTable'
@@ -25,7 +24,6 @@ interface AddResourceModalProps<T>
   }
   selectedRows: T[]
   onAddItems: () => void
-  uploadItem?: (data: FormData) => Promise<void>
   resource: string
 }
 
@@ -33,7 +31,6 @@ const AddResourceModal = <T extends TableItem>({
   data,
   selectedRows,
   onAddItems,
-  uploadItem,
   resource,
   ...props
 }: AddResourceModalProps<T>) => {
@@ -42,7 +39,6 @@ const AddResourceModal = <T extends TableItem>({
   const [inputValue, setInputValue] = useState<string>('')
   const [selectedItems, setSelectedItems] = useState<string[]>([])
 
-  const formData = new FormData()
   const { loading, getItems } = data
   const items = getItems(inputValue, selectedItems)
 
@@ -102,14 +98,6 @@ const AddResourceModal = <T extends TableItem>({
             {t('common.cancel')}
           </AppButton>
         </Box>
-
-        {uploadItem && (
-          <AddDocuments
-            buttonText={t('common.uploadNewFile')}
-            fetchData={uploadItem}
-            formData={formData}
-          />
-        )}
       </Box>
     </Box>
   )
