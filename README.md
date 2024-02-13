@@ -1,6 +1,6 @@
 # Space2Study-node-Client-mvp
 
-<a href="https://softserve.academy/"><img src="../blob/main/photo2.jpg" title="SoftServe IT Academy" alt="SoftServe IT Academy"></a>
+<a href="https://softserve.academy/"><img src="../main/photo2.jpg" title="SoftServe IT Academy" alt="SoftServe IT Academy"></a>
 
 # SpaceToStudy project
 
