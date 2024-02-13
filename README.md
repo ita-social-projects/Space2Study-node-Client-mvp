@@ -167,11 +167,11 @@ Checks:
 
 ## Contributing
 
-You're encouraged to contribute to our project if you've found any issues or missing functionality that you would want to see. You can add it to 'Issues' in Issue tab and after that click on 'New issue'. There you can see the list of issues and create a new issue after clicking on 'New Issue'.
+You're encouraged to contribute to our project if you've found any issues or missing functionality that you would want to see. You can add in **Issues** tab and after that click on `New issue`. There you can see the list of issues and create a new issue after clicking on `New Issue`.
 
 Before sending any pull request, please discuss requirements/changes to be implemented using an existing issue or by creating a new one. All pull requests should be done into `develop` branch.
 
-There are two GitHub projects: [Space2Study-node-Client-mvp] for frontend part and [Space2Study-node-BackEnd-mvp] for backend part. Every project has it's own issues.
+There are two GitHub projects: **Space2Study-node-Client-mvp** for frontend part and **Space2Study-node-BackEnd-mvp** for backend part. Every project has it's own issues.
 
 Every pull request should be linked to an issue. So if you make changes on frontend, backend or admin parts you should create an issue with a link to corresponding requirement (story, task or epic).
 
@@ -183,7 +183,7 @@ e.g. #020-createAdminPanel
 ### Git flow
 
 We have **main** , **develop** and **feature** branches.  
-All **feature** branches must be merged into [develop] branch!!!
+All **feature** branches must be merged into `develop` branch!!!
 Only the release should merge into the main branch!!!
 
 ![Github flow](<https://wac-cdn.atlassian.com/dam/jcr:b5259cce-6245-49f2-b89b-9871f9ee3fa4/03%20(2).svg?cdnVersion=1312>)
@@ -192,7 +192,7 @@ Only the release should merge into the main branch!!!
 
 - **Option 1**
 
-  - 👯 Clone this repo to your local machine
+  - 👯 clone this repo to your local machine
 
 - **Option 2**
 
@@ -204,7 +204,7 @@ Only the release should merge into the main branch!!!
 
 #### Step 3
 
-- 🔃 Create a new pull request in this repository
+- 🔃 create a new pull request in this repository
 
 ---
 
@@ -212,11 +212,11 @@ Only the release should merge into the main branch!!!
 
 #### Step 1
 
-- go to [issues] and click `New issue` button
+- go to **Issues** and click `New issue` button
 
 #### Step 2
 
-- when creating [issue] you should add name of the issue, description, choose assignee, label, project. If issue is a `User Story` you should link it with corresponding tasks, and corresponding tasks should be linked to issue.
+- when creating issue you should add name of the issue, description, choose assignee, label, project. If issue is a `User Story` you should link it with corresponding tasks, and corresponding tasks should be linked to issue.
 
 #### Step 3
 
