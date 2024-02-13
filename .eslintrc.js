@@ -9,7 +9,6 @@ module.exports = {
     'eslint:recommended',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
-    'plugin:storybook/recommended',
     'plugin:vitest-globals/recommended'
   ],
   parserOptions: {
@@ -93,12 +92,6 @@ module.exports = {
       files: ['**/tests/**/*.*.js', '**/tests/**/*.js'],
       env: {
         jest: true
-      }
-    },
-    {
-      files: ['**/*.stories.*'],
-      rules: {
-        'import/no-anonymous-default-export': 'off'
       }
     }
   ]
