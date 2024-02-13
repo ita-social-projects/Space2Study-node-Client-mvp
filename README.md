@@ -172,10 +172,9 @@ Before sending any pull request, please discuss requirements/changes to be imple
 
 There are two GitHub projects: **Space2Study-node-Client-mvp** for frontend part and **Space2Study-node-BackEnd-mvp** for backend part. Every project has it's own issues.
 
-Every pull request should be linked to an issue. So if you make changes on frontend, backend or admin parts you should create an issue with a link to corresponding requirement (story, task or epic).
+Every pull request should be linked to an issue. So if you make changes on frontend or backend parts you should create an issue with a link to corresponding requirement (story, task or epic). Every issue should have its own branch. Every branch name should start from task type (`feature`, `bugfix` or `test`), task number and short description. e.g. **feature/125/create-adminPanel**
 
-All Pull Requests should start from task type (`feature`, `bugfix` or `test`), task number and short description
-e.g. feature/125/create-adminPanel
+All Pull Requests should start from prefix `#xxx-yyy` where xxx - task number and and yyy - short description e.g. **#125-createAdminPanel**
 
 ---
 
