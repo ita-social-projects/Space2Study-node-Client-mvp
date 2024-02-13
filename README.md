@@ -1,6 +1,6 @@
 # Space2Study-node-Client-mvp
 
-<a href="https://softserve.academy/"><img src="https://github.com/ita-social-projects/SpaceToStudy-Client/blob/main/photo2.jpg" title="SoftServe IT Academy" alt="SoftServe IT Academy"></a>
+<a href="https://softserve.academy/"><img src="blob/main/photo2.jpg" title="SoftServe IT Academy" alt="SoftServe IT Academy"></a>
 
 # SpaceToStudy project
 
@@ -28,7 +28,6 @@ SpaceToStudy project is a platform where experts in various fields share their k
   - [BA team](#ba-team)
   - [QC team](#qc-team)
 - [FAQ](#faq)
-- [Support](#support)
 - [License](#license)
 
 ---
@@ -175,8 +174,8 @@ There are two GitHub projects: **Space2Study-node-Client-mvp** for frontend part
 
 Every pull request should be linked to an issue. So if you make changes on frontend, backend or admin parts you should create an issue with a link to corresponding requirement (story, task or epic).
 
-All Pull Requests should start from prefix _#xxx-yyy_ where _xxx_ - task number and and _yyy_ - short description
-e.g. #020-createAdminPanel
+All Pull Requests should start from task type (`feature`, `bugfix` or `test`), task number and short description
+e.g. feature/125/create-adminPanel
 
 ---
 
@@ -258,10 +257,6 @@ Only the release should merge into the main branch!!!
 
 - **How do I do _specifically_ so and so?**
   - No problem! Just do this.
-
----
-
-## Support
 
 ---
 
