@@ -1,5 +1,6 @@
 export const authRoutes = {
   categories: { route: 'categories', path: '/categories' },
+  subjects: { route: 'categories/subjects', path: '/categories/subjects' },
   userProfile: { route: 'user/:id', path: '/user' },
   myResources: {
     root: { route: 'my-resources', path: '/my-resources' },

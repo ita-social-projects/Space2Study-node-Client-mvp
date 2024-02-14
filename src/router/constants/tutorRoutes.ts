@@ -2,7 +2,7 @@ import { authRoutes } from '~/router/constants/authRoutes'
 
 export const findOffersChildRoutes = [
   { route: 'categories', path: authRoutes.categories.route },
-  { route: 'subjects', path: authRoutes.categories.path }
+  { route: 'subjects', path: authRoutes.subjects.path }
 ]
 
 export const tutorRoutes = {
