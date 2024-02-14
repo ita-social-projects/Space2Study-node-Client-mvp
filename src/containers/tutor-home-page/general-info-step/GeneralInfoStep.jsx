@@ -1,7 +1,6 @@
 import { useEffect, useCallback } from 'react'
 import { useSelector } from 'react-redux'
 import { useTranslation } from 'react-i18next'
-import { LocationService } from '~/services/location-service'
 import { userService } from '~/services/user-service'
 
 import { createFilterOptions } from '@mui/material'
@@ -20,7 +19,6 @@ import img from '~/assets/img/tutor-home-page/become-tutor/general-info.svg'
 import { useStepContext } from '~/context/step-context'
 import { validations } from '~/components/user-steps-wrapper/constants'
 import { styles } from '~/containers/tutor-home-page/general-info-step/GeneralInfoStep.styles'
-import { defaultResponses } from '~/constants'
 
 const GeneralInfoStep = ({
   btnsBox,
@@ -51,12 +49,12 @@ const GeneralInfoStep = ({
     return defaultFilterOptions(options, state).slice(0, 300)
   }
 
-  const onChangeCountry = async (_, value) => {
+  const onChangeCountry = (_, value) => {
     if (data.country !== value) {
       handleNonInputValueChange('city', null)
       handleNonInputValueChange('country', value)
     }
-    if (value) await fetchCities(value)
+    if (value) fetchCities
   }
 
   const onChangeCity = (_, value) => {
@@ -66,12 +64,6 @@ const GeneralInfoStep = ({
   const getUserById = useCallback(
     () => userService.getUserById(userId, userRole),
     [userId, userRole]
-  )
-
-  const getCountries = useCallback(() => LocationService.getCountries(), [])
-  const getCities = useCallback(
-    (country) => LocationService.getCities(country),
-    []
   )
 
   const updateUserName = useCallback(
@@ -96,33 +88,18 @@ const GeneralInfoStep = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  const {
-    loading: loadingCountries,
-    response: countries,
-    fetchData: fetchCountries
-  } = useAxios({
-    service: getCountries,
-    fetchOnMount: false,
-    defaultResponse: defaultResponses.array
-  })
+  const mockCountries = ['Ukraine', 'USA', 'Germany', 'France', 'Italy']
+  const mockCities = ['Kyiv', 'New York', 'Berlin', 'Paris', 'Rome']
 
-  const {
-    loading: loadingCities,
-    fetchData: fetchCities,
-    response: cities
-  } = useAxios({
-    service: getCities,
-    fetchOnMount: false,
-    clearResponse: true,
-    defaultResponse: defaultResponses.array
-  })
+  const fetchCountries = () => mockCountries
+  const fetchCities = () => mockCities
 
   useEffect(() => {
     handleStepData(stepLabel, data, errors)
   }, [data, errors, stepLabel, handleStepData])
 
   const onFocusCountry =
-    !data.country && !countries.length ? fetchCountries : undefined
+    !data.country && !mockCountries.length ? fetchCountries : undefined
 
   if (userLoading) {
     return (
@@ -176,10 +153,9 @@ const GeneralInfoStep = ({
             />
 
             <AppAutoComplete
-              loading={loadingCountries}
               onChange={onChangeCountry}
               onFocus={onFocusCountry}
-              options={countries}
+              options={mockCountries}
               sx={{ mb: '30px' }}
               textFieldProps={{
                 label: t('common.labels.country')
@@ -191,9 +167,8 @@ const GeneralInfoStep = ({
             <AppAutoComplete
               disabled={!data.country}
               filterOptions={filterOptions}
-              loading={loadingCities}
               onChange={onChangeCity}
-              options={cities}
+              options={mockCities}
               sx={{ mb: '30px' }}
               textFieldProps={{
                 label: t('common.labels.city')
