@@ -2,21 +2,15 @@ import { SxProps, Theme } from '@mui/material'
 import {
   Breakpoints,
   ConvertedSize,
-  Cooperation,
-  FilterFromQuery,
   FormatedDate,
-  Lesson,
-  Offer,
-  Quiz,
-  RemoveColumnRules,
-  ScreenBasedLimits,
   TableColumn,
   UserRole,
   UserRoleEnum,
-  Attachment,
   GroupedByDateItems,
   Question,
-  Categories
+  Categories,
+  ScreenBasedLimits,
+  RemoveColumnRules
 } from '~/types'
 
 export const parseJwt = <T,>(token: string): T => {
@@ -33,26 +27,6 @@ export const parseJwt = <T,>(token: string): T => {
   )
 
   return JSON.parse(jsonPayload) as T
-}
-
-export const parseQueryParams = <T extends object>(
-  searchParams: URLSearchParams,
-  defaultFilters: T
-): FilterFromQuery | null => {
-  const filtersFromQuery: FilterFromQuery = {}
-  searchParams.forEach((value, key) => {
-    if (key in defaultFilters) {
-      if (key === 'price' || key === 'proficiencyLevel') {
-        filtersFromQuery[key] = value ? value.split(',') : []
-      } else {
-        filtersFromQuery[key] = value
-      }
-    }
-  })
-
-  const result = Object.keys(filtersFromQuery).length ? filtersFromQuery : null
-
-  return result
 }
 
 export const getEmptyValues = <T extends object, R>(
@@ -142,16 +116,7 @@ export const getScreenBasedLimit = (
   }
 }
 
-export const ajustColumns = <
-  T extends
-    | Cooperation
-    | Offer
-    | Lesson
-    | Attachment
-    | Quiz
-    | Question
-    | Categories
->(
+export const ajustColumns = <T extends Question | Categories>(
   breakpoints: Breakpoints,
   columns: TableColumn<T>[],
   rules: RemoveColumnRules<T>

@@ -20,7 +20,6 @@ import offerPage from './offer-page.json'
 import offerDetailsPage from './offer-details-page.json'
 import cooperationsPage from './cooperations-page.json'
 import myResourcesPage from './my-resources-page.json'
-import lesson from './lesson.json'
 import questionPage from './question-page.json'
 import footer from './footer.json'
 import step from './step.json'
@@ -54,7 +53,6 @@ const ua = {
     offerDetailsPage,
     cooperationsPage,
     myResourcesPage,
-    lesson,
     questionPage,
     footer,
     step,
