@@ -94,7 +94,7 @@ const ForgotPassword = () => {
           onChange={handleInputChange('email')}
           required
           size='large'
-          sx={{ mb: '16px', mt: '32px' }}
+          sx={{ mb: '5px' }}
           type='email'
           value={data.email}
         />

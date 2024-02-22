@@ -36,10 +36,6 @@ const Navbar = () => {
   const { pathname } = useLocation()
   const { t } = useTranslation()
 
-  const homePath = userRole
-    ? guestRoutes[userRole].path
-    : guestRoutes.welcome.path
-
   const isChildRouteActive = findOffersChildRoutes.some((childRoute) =>
     Boolean(matchPath(childRoute.path, pathname))
   )
@@ -106,10 +102,10 @@ const Navbar = () => {
   return (
     <Box sx={styles.header}>
       <Button
-        component={HashLink}
+        component={Link}
         size={SizeEnum.Small}
         sx={styles.logoButton}
-        to={homePath}
+        to={guestRoutes.home.path}
       >
         <Logo />
       </Button>
