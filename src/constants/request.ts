@@ -18,17 +18,6 @@ export const URLs = {
     delete: '/users/delete',
     myProfile: '/users/myProfile'
   },
-  offers: {
-    create: '/offers',
-    update: '/offers',
-    get: '/offers'
-  },
-  courses: {
-    get: '/courses',
-    delete: '/courses',
-    create: '/courses',
-    patch: '/courses'
-  },
   categories: {
     get: '/categories',
     getNames: '/categories/names',
@@ -38,29 +27,7 @@ export const URLs = {
     get: '/subjects',
     getNames: '/subjects/names'
   },
-  cooperations: {
-    get: '/cooperations',
-    create: '/cooperations',
-    update: '/cooperations'
-  },
-  chats: {
-    get: '/chats',
-    create: '/chats',
-    delete: '/chats',
-    patch: '/chats'
-  },
   resources: {
-    lessons: {
-      add: '/lessons',
-      get: '/lessons',
-      delete: '/lessons',
-      patch: '/lessons'
-    },
-    attachments: {
-      get: '/attachments',
-      patch: '/attachments',
-      delete: '/attachments'
-    },
     questions: {
       get: '/questions',
       delete: '/questions',
@@ -74,20 +41,5 @@ export const URLs = {
       post: '/resources-categories',
       delete: 'resources-categories'
     }
-  },
-  messages: {
-    get: '/messages',
-    post: '/messages',
-    delete: '/messages',
-    patch: '/messages'
-  },
-  quizzes: {
-    get: '/quizzes',
-    add: '/quizzes',
-    patch: '/quizzes',
-    delete: '/quizzes'
-  },
-  attachments: {
-    post: '/attachments'
   }
 }

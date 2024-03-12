@@ -4,6 +4,7 @@ import { Route } from 'react-router-dom'
 import { authRoutes } from '~/router/constants/authRoutes'
 import {
   categories,
+  subjects,
   myProfile,
   myResources,
   userProfile,
@@ -15,6 +16,7 @@ import { UserRoleEnum } from '~/types'
 import { userProfileLoader } from '../constants/loaders'
 
 const Categories = lazy(() => import('~/pages/categories/Categories'))
+const Subjects = lazy(() => import('~/pages/subjects/Subjects'))
 const TutorProfile = lazy(() => import('~/pages/tutor-profile/TutorProfile'))
 const MyResources = lazy(() => import('~/pages/my-resources/MyResources'))
 
@@ -30,6 +32,11 @@ export const authRouter = (
       element={<Categories />}
       handle={{ crumb: categories }}
       path={authRoutes.categories.route}
+    />
+    <Route
+      element={<Subjects />}
+      handle={{ crumb: [categories, subjects] }}
+      path={authRoutes.subjects.route}
     />
     <Route
       element={<TutorProfile />}

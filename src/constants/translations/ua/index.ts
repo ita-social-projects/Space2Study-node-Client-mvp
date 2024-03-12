@@ -20,7 +20,6 @@ import offerPage from './offer-page.json'
 import offerDetailsPage from './offer-details-page.json'
 import cooperationsPage from './cooperations-page.json'
 import myResourcesPage from './my-resources-page.json'
-import lesson from './lesson.json'
 import questionPage from './question-page.json'
 import footer from './footer.json'
 import step from './step.json'
@@ -28,6 +27,7 @@ import userTable from './user-table.json'
 import cookiePolicyPage from './cookie-policy-page.json'
 import guestHomePage from './guest-home-page.json'
 import table from './table.json'
+import subjectsPage from './subjects-page.json'
 
 const ua = {
   translations: {
@@ -53,14 +53,14 @@ const ua = {
     offerDetailsPage,
     cooperationsPage,
     myResourcesPage,
-    lesson,
     questionPage,
     footer,
     step,
     userTable,
     cookiePolicyPage,
     guestHomePage,
-    table
+    table,
+    subjectsPage
   }
 }
 
