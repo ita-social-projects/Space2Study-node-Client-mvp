@@ -5,10 +5,8 @@ import Transition, {
 } from 'react-transition-group/Transition'
 
 import Box from '@mui/material/Box'
-import { useModalContext } from '~/context/modal-context'
 import AppButton from '~/components/app-button/AppButton'
 import TitleWithDescription from '~/components/title-with-description/TitleWithDescription'
-import SignupDialog from '~/containers/guest-home-page/signup-dialog/SignupDialog'
 import dots from '~/assets/img/guest-home-page/dots.svg'
 
 import {
@@ -28,16 +26,10 @@ interface CardsWithButtonProps {
 
 const CardsWithButton: FC<CardsWithButtonProps> = ({
   array,
-  role,
   btnText,
   isTutor
 }) => {
   const { t } = useTranslation()
-  const { openModal } = useModalContext()
-
-  const openDialog = () => {
-    openModal({ component: <SignupDialog type={role} /> })
-  }
 
   const cards = (state: TransitionChildren) =>
     array.map((item, key) => {
@@ -71,11 +63,7 @@ const CardsWithButton: FC<CardsWithButtonProps> = ({
       <Transition in={isTutor} timeout={300}>
         {(state) => cards(state)}
       </Transition>
-      <AppButton
-        onClick={openDialog}
-        size={SizeEnum.ExtraLarge}
-        sx={styles.button}
-      >
+      <AppButton size={SizeEnum.ExtraLarge} sx={styles.button}>
         {btnText}
       </AppButton>
     </>
