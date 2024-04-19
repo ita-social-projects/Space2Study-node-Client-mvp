@@ -1,14 +1,10 @@
-<a href="https://softserve.academy/"><img src="https://github.com/ita-social-projects/SpaceToStudy-Client/blob/main/photo2.jpg" title="SoftServe IT Academy" alt="SoftServe IT Academy"></a>
+# Space2Study-node-Client-mvp
+
+<a href="https://softserve.academy/"><img src="../main/photo2.jpg" title="SoftServe IT Academy" alt="SoftServe IT Academy"></a>
 
 # SpaceToStudy project
 
 SpaceToStudy project is a platform where experts in various fields share their knowledge and students can learn from the best. Here you can find the proper training course, find a tutor, or find students and receive feedback from them.
-
-
-[![GitHub issues](https://img.shields.io/github/issues/ita-social-projects/SpaceToStudy-Client)](https://github.com/ita-social-projects/SpaceToStudy-Client/issues)
-[![Pending Pull-Requests](https://img.shields.io/github/issues-pr/ita-social-projects/SpaceToStudy-Client?style=flat-square)](https://github.com/ita-social-projects/SpaceToStudy-Client/pulls)
-[![GitHub license](https://img.shields.io/github/license/ita-social-projects/SpaceToStudy-Client)](https://github.com/ita-social-projects/SpaceToStudy-Client/blob/LICENSE)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/horondi/horondi_client_fe)](https://s2s-front-stage.azurewebsites.net/)
 
 ---
 
@@ -22,8 +18,6 @@ SpaceToStudy project is a platform where experts in various fields share their k
 - [Documentation](#Documentation)
   - [Rules and guidelines](#Rules-and-guidelines)
   - [Testing](#Testing)
-  - [Generator](#Generator)
-- [Project deploy](#project-deploy)
 - [Contributing](#contributing)
   - [git flow](#git-flow)
   - [issue flow](#git-flow)
@@ -31,8 +25,9 @@ SpaceToStudy project is a platform where experts in various fields share their k
   - [Development team](#development-team) 
   - [DevOps team](#devops-team) 
   - [Designer team](#designer-team) 
+  - [BA team](#ba-team)
+  - [QC team](#qc-team)
 - [FAQ](#faq)
-- [Support](#support)
 - [License](#license)
 
 ---
@@ -47,7 +42,7 @@ SpaceToStudy project is a platform where experts in various fields share their k
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/ita-social-projects/SpaceToStudy-Client.git`
+- Clone this repo to your local machine
 
 ### Setup
 
@@ -71,8 +66,6 @@ $ npm install
 ### How to run tests
 
 To run unit test open terminal and run `npm run test` in it.
-To run E2E tests you need open terminal and run `npm run start` in it to start server.
-Then open one more terminal and run `npm run cypress`.
 
 ---
 
@@ -87,8 +80,6 @@ Then open one more terminal and run `npm run cypress`.
 - Configuration
   - Configuration is done via `.env` file where environment
     variables are located
-  - Also we have `.env.example` that contains examples of environment
-    variables
 - Styles
   - For styling function `makeStyles` from `@material-ui`
     should be used and all styles should be located inside separate
@@ -173,45 +164,24 @@ Checks:
 
 ---
 
-### Generator
-
-Command `npm run generate` is used to run [graphql code generator](https://graphql-code-generator.com)
-
-1. before using codegen you must run backend server [SpaceToStudy backend](https://github.com/ita-social-projects/SpaceToStudy-BackEnd)
-
-2. open terminal
-
-3. run `npm run generate`
-
-4. you should run `npm run generate` every time new unions or interfaces are created
-
----
-
-## Project Deploy
-
-#### Deploy Сlient part: https://s2s-front-stage.azurewebsites.net/
-
----
-
 ## Contributing
 
-You're encouraged to contribute to our project if you've found any issues or missing functionality that you would want to see. Here you can see [the list of issues](https://github.com/ita-social-projects/SpaceToStudy-Client/issues) and here you can create [a new issue](https://github.com/ita-social-projects/SpaceToStudy-Client/issues/new/choose).
+You're encouraged to contribute to our project if you've found any issues or missing functionality that you would want to see. You can add in **Issues** tab and after that click on `New issue`. There you can see the list of issues and create a new issue after clicking on `New Issue`.
 
 Before sending any pull request, please discuss requirements/changes to be implemented using an existing issue or by creating a new one. All pull requests should be done into `develop` branch.
 
-There are three GitHub projects: [SpaceToStudy-Client](https://github.com/ita-social-projects/SpaceToStudy-Client) for frontend part, [SpaceToStudy-BackEnd](https://github.com/ita-social-projects/SpaceToStudy-BackEnd/pulls) for backend part and admin part is currently under development. Every project has it's own issues.
+There are two GitHub projects: **Space2Study-node-Client-mvp** for frontend part and **Space2Study-node-BackEnd-mvp** for backend part. Every project has it's own issues.
 
-Every pull request should be linked to an issue. So if you make changes on frontend, backend or admin parts you should create an issue with a link to corresponding requirement (story, task or epic).
+Every pull request should be linked to an issue. So if you make changes on frontend or backend parts you should create an issue with a link to corresponding requirement (story, task or epic). Every issue should have its own branch. Every branch name should start from task type (`feature`, `bugfix` or `test`), task number and short description. e.g. **feature/125/create-adminPanel**
 
-All Pull Requests should start from prefix _#xxx-yyy_ where _xxx_ - task number and and _yyy_ - short description
-e.g. #020-createAdminPanel
+All Pull Requests should start from prefix `#xxx-yyy` where xxx - task number and and yyy - short description e.g. **#125-createAdminPanel**
 
 ---
 
 ### Git flow
 
 We have **main** , **develop** and **feature** branches.  
-All **feature** branches must be merged into [develop](https://github.com/ita-social-projects/SpaceToStudy-Client/tree/develop) branch!!!
+All **feature** branches must be merged into `develop` branch!!!
 Only the release should merge into the main branch!!!
 
 ![Github flow](<https://wac-cdn.atlassian.com/dam/jcr:b5259cce-6245-49f2-b89b-9871f9ee3fa4/03%20(2).svg?cdnVersion=1312>)
@@ -220,7 +190,7 @@ Only the release should merge into the main branch!!!
 
 - **Option 1**
 
-  - 👯 Clone this repo to your local machine using `https://github.com/ita-social-projects/SpaceToStudy-Client.git`
+  - 👯 clone this repo to your local machine
 
 - **Option 2**
 
@@ -232,7 +202,7 @@ Only the release should merge into the main branch!!!
 
 #### Step 3
 
-- 🔃 Create a new pull request using <a href="https://github.com/ita-social-projects/SpaceToStudy-Client/compare/" target="_blank">github.com/ita-social-projects/SpaceToStudy-Client</a>.
+- 🔃 create a new pull request in this repository
 
 ---
 
@@ -240,11 +210,11 @@ Only the release should merge into the main branch!!!
 
 #### Step 1
 
-- go to [issues](https://github.com/ita-social-projects/SpaceToStudy-Client/issues) and click `New issue` button
+- go to **Issues** and click `New issue` button
 
 #### Step 2
 
-- when creating [issue](https://github.com/ita-social-projects/SpaceToStudy-Client/issues/new/choose) you should add name of the issue, description, choose assignee, label, project. If issue is a `User Story` you should link it with corresponding tasks, and corresponding tasks should be linked to issue.
+- when creating issue you should add name of the issue, description, choose assignee, label, project. If issue is a `User Story` you should link it with corresponding tasks, and corresponding tasks should be linked to issue.
 
 #### Step 3
 
@@ -256,66 +226,36 @@ Only the release should merge into the main branch!!!
 
 ### Development team
 
-[![@DeLettenhove](https://avatars.githubusercontent.com/u/49168997?v=4)](https://github.com/DeLettenhove)
-[![@boris-giga](https://avatars.githubusercontent.com/u/61072426?v=4)](https://github.com/boris-giga)
-[![@bohdanst1914](https://avatars.githubusercontent.com/u/27858056?v=4)](https://github.com/bohdanst1914)
-[![@domnelkin](https://avatars.githubusercontent.com/u/78971099?v=4)](https://github.com/domnelkin)
-[![@RestingState](https://avatars.githubusercontent.com/u/84774115?v=4)](https://github.com/RestingState)
-[![@greentoss](https://avatars.githubusercontent.com/u/41526202?v=4)](https://github.com/greentoss)
-[![@High-Voltaged](https://avatars.githubusercontent.com/u/71522782?v=4)](https://github.com/High-Voltaged)
-[![@Mr-Bogdan](https://avatars.githubusercontent.com/u/62215279?v=4)](https://github.com/Mr-Bogdan)
-[![@dmytruk-y](https://avatars.githubusercontent.com/u/86732805?v=4)](https://github.com/dmytruk-y)
-[![@Haytham1337](https://avatars.githubusercontent.com/u/36926670?v=4)](https://github.com/Haytham1337)
-[![@byavdoshniak](https://avatars.githubusercontent.com/u/87911115?s=200&u=4540d5aba6e388992ca06b9224ed0e0a35f94b1c&v=4)](https://github.com/byavdoshniak)
-[![@rostyslaw27](https://avatars.githubusercontent.com/u/57355852?s=200&u=4540d5aba6e388992ca06b9224ed0e0a35f94b1c&v=4)](https://github.com/rostyslaw27)
-[![@tarasSanotskyi](https://avatars.githubusercontent.com/u/79531224?s=200&u=4540d5aba6e388992ca06b9224ed0e0a35f94b1c&v=4)](https://github.com/tarasSanotskyi)
-[![@LubomyrKashuba](https://avatars.githubusercontent.com/u/80056472?s=200&u=4540d5aba6e388992ca06b9224ed0e0a35f94b1c&v=4)](https://github.com/LubomyrKashuba)
-[![@wonderflu](https://avatars.githubusercontent.com/u/86119240?v=4)](https://github.com/wonderflu)
-[![@romanortynskyi](https://avatars.githubusercontent.com/u/50491616?s=200&u=4540d5aba6e388992ca06b9224ed0e0a35f94b1c&v=4)](https://github.com/romanortynskyi)
-[![@](https://avatars.githubusercontent.com/u/45914032?v=4)](https://github.com/Pipuss)
 [![@Tolik170](https://avatars.githubusercontent.com/u/63456632?v=4)](https://github.com/Tolik170)
-[![@Yevhendzyuba](https://avatars.githubusercontent.com/u/56231198?v=4)](https://github.com/Yevhendzyuba)
-[![@MickhaelSh](https://avatars.githubusercontent.com/u/97129041?v=4)](https://github.com/MickhaelSh)
-[![@IrynaMel](https://avatars.githubusercontent.com/u/86352174?v=4)](https://github.com/IrynaMel)
-[![@Yurenko](https://avatars.githubusercontent.com/u/83120263?v=4)](https://github.com/Yurenko)
-[![@KhrystynaPavlikovska](https://avatars.githubusercontent.com/u/34419998?s=400&u=15346304d164fb346cc2671a7d33052d2a6324e2&v=4)](https://github.com/KhrystynaPavlikovska)
-[![@Roman-Peretiatko](https://avatars.githubusercontent.com/u/79856961?v=4)](https://github.com/Roman-Peretiatko)
-[![@mxrcury](https://user-images.githubusercontent.com/34419998/222748150-75fae7f1-e219-48f6-a225-8f91f9cbbbd3.png)](https://github.com/mxrcury)
-[![@tsivkadi](https://user-images.githubusercontent.com/34419998/222748492-37a29d91-8acc-4319-8402-52ec5fbaa57a.png)](https://github.com/tsivkadi)
-[![@Radomyr-kh](https://user-images.githubusercontent.com/34419998/222748801-1112f260-9c96-4234-9e5e-550cddeb80d5.png)](https://github.com/Radomyr-kh)
-[![@ArturBekhDEV](https://avatars.githubusercontent.com/u/102412173?v=4)](https://github.com/ArturBekhDEV)
-[![@FryDay969](https://avatars.githubusercontent.com/u/39992977?v=4)](https://github.com/FryDay969)
-[![@TSlashDreamy](https://avatars.githubusercontent.com/u/45912519?v=4)](https://github.com/TSlashDreamy)
 [![@Mav-Ivan](https://avatars.githubusercontent.com/u/110425368?v=4)](https://github.com/Mav-Ivan)
-[![@mynotdoing](https://avatars.githubusercontent.com/u/75339353?v=4)](https://github.com/mynotdoing)
 [![@dmtrth25](https://avatars.githubusercontent.com/u/56305508?v=4)](https://github.com/dmtrth25)
 [![@abalanovsky](https://avatars.githubusercontent.com/u/108689551?v=4)](https://github.com/abalanovsky)
 [![@OlyaKorchan](https://avatars.githubusercontent.com/u/17857767?v=4)](https://github.com/OlyaKorchan)
-[![@MariaAfonina](https://avatars.githubusercontent.com/u/104988390?v=4)](https://github.com/MariaAfonina)
-[![@]()]()
+[![@Marichka0406](https://avatars.githubusercontent.com/u/121502737?v=4)](https://github.com/Marichka0406)
 
 ### DevOps team
 
-[![@redbearddog](https://avatars.githubusercontent.com/u/54843443?v=4)](https://github.com/redbearddog)
 [![@abohatyrov](https://avatars.githubusercontent.com/u/52012169?v=4)](https://github.com/abohatyrov)
-[![@panasyg](https://avatars.githubusercontent.com/u/91308486?v=4)](https://github.com/panasyg)
+[![@bdeputat](https://avatars.githubusercontent.com/u/36072762?v=4)](https://github.com/bdeputat)
 
 ### Designer team
 
-[![@philosofii](https://avatars.githubusercontent.com/u/111736765?v=4)](https://github.com/philosofii)
-[![@KhrystynaPavlikovska](https://avatars.githubusercontent.com/u/34419998?s=400&u=15346304d164fb346cc2671a7d33052d2a6324e2&v=4)](https://github.com/KhrystynaPavlikovska)
-[![@LazyMarichka](https://avatars.githubusercontent.com/u/135900325?v=4)](https://github.com/LazyMarichka)
 [![@Nastia197](https://avatars.githubusercontent.com/u/76164279?v=4)](https://github.com/Nastia197)
+
+### BA team
+
+[![@IvannaSW](https://avatars.githubusercontent.com/u/24367409?v=4)](https://github.com/IvannaSW)
+
+### QC team
+
+[![@AntonOkun](https://avatars.githubusercontent.com/u/129941062?v=4)](https://github.com/AntonOkun)
+[![@Valent1n0o](https://avatars.githubusercontent.com/u/118978192?v=4)](https://github.com/Valent1n0o)
 ---
 
 ## FAQ
 
 - **How do I do _specifically_ so and so?**
   - No problem! Just do this.
-
----
-
-## Support
 
 ---
 
