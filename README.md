@@ -6,6 +6,10 @@
 
 SpaceToStudy project is a platform where experts in various fields share their knowledge and students can learn from the best. Here you can find the proper training course, find a tutor, or find students and receive feedback from them.
 
+[![GitHub issues](insert your link here)]
+[![Pending Pull-Requests](insert your link here)]
+[![GitHub license](insert your link here)]
+
 ---
 
 - [Installation](#installation)
