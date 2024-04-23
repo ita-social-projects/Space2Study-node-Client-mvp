@@ -28,6 +28,11 @@ export const subjects = {
   path: authRoutes.subjects.route
 }
 
+export const findOffers = {
+  name: t('breadCrumbs.findOffers'),
+  path: authRoutes.findOffers.route
+}
+
 export const myResources = {
   name: t('breadCrumbs.myResources'),
   path: authRoutes.myResources.root.route
