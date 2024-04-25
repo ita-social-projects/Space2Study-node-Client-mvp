@@ -5,13 +5,11 @@ import IconButton from '@mui/material/IconButton'
 import CloseIcon from '@mui/icons-material/Close'
 import { PaperProps } from '@mui/material'
 
-import useConfirm from '~/hooks/use-confirm'
 import useBreakpoints from '~/hooks/use-breakpoints'
 import { styles } from '~/components/popup-dialog/PopupDialog.styles'
 
 interface PopupDialogProps {
   content: React.ReactNode
-  closeModal: () => void
   paperProps: PaperProps
   timerId: NodeJS.Timeout | null
   closeModalAfterDelay: (delay?: number) => void
@@ -19,25 +17,14 @@ interface PopupDialogProps {
 
 const PopupDialog: FC<PopupDialogProps> = ({
   content,
-  closeModal,
   paperProps,
   timerId,
   closeModalAfterDelay
 }) => {
-  const { checkConfirmation } = useConfirm()
   const { isMobile } = useBreakpoints()
-
-  const onClose = async () => {
-    const confirmed = await checkConfirmation({
-      message: 'questions.unsavedChanges',
-      title: 'titles.confirmTitle'
-    })
-    if (confirmed) closeModal()
-  }
 
   const handleMouseOver = () => timerId && clearTimeout(timerId)
   const handleMouseLeave = () => timerId && closeModalAfterDelay()
-  const handleClose = () => void onClose()
 
   return (
     <Dialog
@@ -46,7 +33,6 @@ const PopupDialog: FC<PopupDialogProps> = ({
       disableRestoreFocus
       fullScreen={isMobile}
       maxWidth='xl'
-      onClose={handleClose}
       open
     >
       <Box
@@ -55,7 +41,7 @@ const PopupDialog: FC<PopupDialogProps> = ({
         onMouseOver={handleMouseOver}
         sx={styles.box}
       >
-        <IconButton onClick={handleClose} sx={styles.icon}>
+        <IconButton sx={styles.icon}>
           <CloseIcon />
         </IconButton>
         <Box sx={styles.contentWraper}>{content}</Box>
