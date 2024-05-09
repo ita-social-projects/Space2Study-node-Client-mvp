@@ -1,11 +1,6 @@
-import { Link } from 'react-router-dom'
-
 import LanguageIcon from '@mui/icons-material/Language'
 import MenuIcon from '@mui/icons-material/Menu'
 import LoginIcon from '@mui/icons-material/Login'
-import MessageRoundedIcon from '@mui/icons-material/MessageRounded'
-import BookmarkIcon from '@mui/icons-material/Bookmark'
-import NotificationsRoundedIcon from '@mui/icons-material/NotificationsRounded'
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined'
 import { IconButtonProps } from '@mui/material/IconButton'
 
@@ -59,29 +54,6 @@ export const guestIcons: NavigationIconButton[] = [
 
 export const userIcons: NavigationIconButton[] = [
   languageIcon,
-  {
-    tooltip: 'iconsTooltip.messages',
-    icon: <MessageRoundedIcon />,
-    buttonProps: () => ({
-      component: Link,
-      sx: styles.studentIcons
-    })
-  },
-  {
-    disabled: true,
-    tooltip: 'iconsTooltip.bookmarks',
-    icon: <BookmarkIcon color='disabled' />,
-    buttonProps: () => ({ sx: styles.studentIcons })
-  },
-  {
-    tooltip: 'iconsTooltip.notifications',
-    badgeContent: ({ notifications }) => notifications,
-    icon: <NotificationsRoundedIcon />,
-    buttonProps: ({ openNotifications }) => ({
-      onClick: openNotifications,
-      sx: styles.studentIcons
-    })
-  },
   {
     tooltip: 'iconsTooltip.account',
     icon: <AccountCircleOutlinedIcon />,
