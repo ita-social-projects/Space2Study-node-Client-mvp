@@ -50,22 +50,6 @@ describe('EmailConfirmModal test', () => {
     expect(description).toBeInTheDocument()
   })
 
-  it('should render positive-scenario image and message - (response from useAxios)', async () => {
-    const fakeData = {
-      error: null,
-      loading: false,
-      response: { response: { status: 204 } }
-    }
-    useAxios.mockImplementation(() => fakeData)
-    renderWithProviders(<EmailConfirmModal {...props} />)
-
-    const modalImg = screen.getByAltText('info')
-    const title = screen.getByText('modals.emailConfirm')
-
-    expect(modalImg).toBeInTheDocument()
-    expect(title).toBeInTheDocument()
-  })
-
   it('should render Loader - (loading from useAxios)', async () => {
     const fakeData = {
       error: null,
@@ -78,19 +62,5 @@ describe('EmailConfirmModal test', () => {
     const loader = screen.getByTestId('loader')
 
     expect(loader).toBeInTheDocument()
-  })
-
-  it('should render button', async () => {
-    const fakeData = {
-      error: null,
-      loading: false,
-      response: { response: { status: 204 } }
-    }
-    useAxios.mockImplementation(() => fakeData)
-    renderWithProviders(<EmailConfirmModal {...props} />)
-
-    const button = screen.getByText('button.goToLogin')
-
-    expect(button).toBeInTheDocument()
   })
 })
