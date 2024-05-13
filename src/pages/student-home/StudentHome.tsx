@@ -32,7 +32,6 @@ const StudentHome = () => {
   return (
     <Container data-testid='studentHome' sx={{ flex: 1 }}>
       <FindBlock translationKey={translationKey} />
-      {/*implement here*/}
       <Faq />
     </Container>
   )

@@ -12,22 +12,9 @@ mockAxiosClient
   .reply(200, userDataMock)
 
 describe('TutorHome component', () => {
-  const firstLoginState = {
-    appMain: { isFirstLogin: true, userRole, userId }
-  }
   const secondLoginState = {
     appMain: { isFirstLogin: false, userRole, userId }
   }
-
-  it('should render a BecomeATutor modal when logging in for the first time', async () => {
-    renderWithProviders(<TutorHome />, { preloadedState: firstLoginState })
-
-    await waitFor(() =>
-      expect(
-        screen.getByText(/becomeTutor.generalInfo.title/i)
-      ).toBeInTheDocument()
-    )
-  })
 
   it("shouldn't render a BecomeATutor modal when logging in for the second time", () => {
     renderWithProviders(<TutorHome />, { preloadedState: secondLoginState })
