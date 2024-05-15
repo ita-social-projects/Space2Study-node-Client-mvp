@@ -89,7 +89,7 @@ module.exports = {
       }
     },
     {
-      files: ['**/tests/**/*.*.js', '**/tests/**/*.js'],
+      files: ['**/src/tests/**/*.*.js', '**/src/tests/**/*.js'],
       env: {
         jest: true
       }

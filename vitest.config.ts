@@ -9,21 +9,21 @@ export default defineConfig({
   resolve: {
     alias: {
       '~': path.resolve(__dirname, 'src/'),
-      '~tests': path.resolve(__dirname, 'tests/')
+      '~tests': path.resolve(__dirname, 'src/tests/')
     }
   },
   test: {
     environment: 'jsdom',
     watch: false,
-    setupFiles: './tests/setup-tests.js',
+    setupFiles: './src/tests/setup-tests.js',
     globals: true,
     exclude: [...configDefaults.exclude, 'packages/template/*'],
     coverage: {
       all: true,
       reporter: ['lcov', 'text'],
       include: ['src/**/*.jsx', 'src/**/*.tsx'],
-      exclude: ['./tests/setup-tests.js'],
-      reportsDirectory: './tests/coverage'
+      exclude: ['./src/tests/setup-tests.js'],
+      reportsDirectory: './src/tests/coverage'
     },
     reporters: ['vitest-sonar-reporter', 'default'],
     outputFile: 'test-report.xml'
