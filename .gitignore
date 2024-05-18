@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-/tests/coverage
+/src/tests/coverage
 test-report.xml
 .scannerwork
 
